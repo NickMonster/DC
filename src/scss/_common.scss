@@ -1,0 +1,25 @@
+html {
+  font-size: 13px;
+}
+
+body {
+  background-color: $body__bg;
+  font-family: $main__font;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.justify-content-between {
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+}

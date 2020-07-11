@@ -1,0 +1,57 @@
+/*------------------------------------------------------------------------------------
+
+[Table of contents]
+
+1. Header
+2. Buttons
+3. Main
+
+--------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------
+    1-Header
+---------------------------------------------------------------------------------------*/
+
+.header {
+  background-image: url("../img/header-bg.png");
+  background-size: 1200px auto;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-position: -630px 0;
+  position: relative;
+  padding: 20px 10px;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.car {
+  max-width: 100%;
+  transform: translate(-20px, 70px);
+}
+
+/*-------------------------------------------------------------------------------------
+    2-Buttons
+---------------------------------------------------------------------------------------*/
+.btn__yellow-1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: #f8ff14;
+  text-align: center;
+  padding: 8px 23px 10px;
+  color: black;
+  display: inline-block;
+  position: relative;
+  transform: skew(-15deg);
+  border: 5px solid black;
+
+  span {
+    transform: skew(15deg);
+    display: inline-block;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+    3-Main
+---------------------------------------------------------------------------------------*/
