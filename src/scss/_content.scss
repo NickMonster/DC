@@ -34,17 +34,34 @@
 /*-------------------------------------------------------------------------------------
     2-Buttons
 ---------------------------------------------------------------------------------------*/
-.btn__yellow-1 {
-  font-size: 1rem;
+.btn {
   text-transform: uppercase;
-  background-color: #f8ff14;
+  background-color: $yellow__main;
   text-align: center;
-  padding: 8px 23px 10px;
   color: black;
   display: inline-block;
   position: relative;
   transform: skew(-15deg);
-  border: 5px solid black;
+
+  &__black-1 {
+    font-family: "Pari-Match-Light";
+    font-size: 2.55rem;
+    padding: 10px 30px 16px;
+    color: $yellow__main;
+    background-color: black;
+    border: 1px solid $yellow__main;
+  }
+
+  &__yellow-1 {
+    font-size: 1rem;
+    padding: 8px 23px 10px;
+    border: 5px solid black;
+  }
+
+  &__yellow-2 {
+    font-size: 2.5rem;
+    padding: 18px 30px 20px;
+  }
 
   span {
     transform: skew(15deg);
@@ -55,3 +72,39 @@
 /*-------------------------------------------------------------------------------------
     3-Main
 ---------------------------------------------------------------------------------------*/
+.main {
+  padding-top: 90px;
+  padding-bottom: 10px;
+  background-image: url("../img/bg.png");
+  background-position: center top;
+  background-size: 200% auto;
+  margin: -80px 0 0;
+  background-repeat: no-repeat;
+}
+
+.main__bottom {
+  margin-top: -40px;
+  position: relative;
+  padding-bottom: 10px;
+  z-index: 2;
+  background: rgb(0, 0, 30);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 30, 1) 75%,
+    rgba(0, 0, 30, 0.10686272800135677) 91%
+  );
+}
+
+.man__left {
+  width: 90%;
+  margin-left: -15px;
+}
+
+.man__right {
+  width: 90%;
+  margin-right: -15px;
+  margin-top: -95px;
+  float: right;
+  z-index: 2;
+  position: relative;
+}

@@ -5,6 +5,7 @@ html {
 body {
   background-color: $body__bg;
   font-family: $main__font;
+  color: white;
 }
 
 a {
@@ -15,11 +16,107 @@ img {
   max-width: 100%;
 }
 
+.col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .d-flex {
   display: flex !important;
+}
+
+.font__circe {
+  font-family: "Circe-Regular";
+}
+
+.font_ {
+  &_size-14 {
+    font-size: 14px;
+  }
+
+  &_size-32 {
+    font-size: 32px;
+  }
+
+  &_size-40 {
+    font-size: 40px;
+  }
 }
 
 .justify-content-between {
   -ms-flex-pack: justify !important;
   justify-content: space-between !important;
+}
+
+.mb-1 {
+  margin-bottom: 2rem !important;
+}
+
+.mb-3,
+.my-3 {
+  margin-bottom: 1rem !important;
+}
+
+.my-5 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.m__b-5 {
+  margin-bottom: 5px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-underline,
+a.text-underline {
+  text-decoration: underline;
+}
+
+a.text-underline {
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-white,
+a.text-white {
+  color: white;
 }

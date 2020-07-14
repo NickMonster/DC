@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "Circle-Regular";
-  src: url("../fonts/circle/Circle-Regular.eot");
-  src: url("../fonts/circle/Circle-Regular.eot?#iefix")
+  font-family: "Circe-Regular";
+  src: url("../fonts/circe/Circe-Regular.eot");
+  src: url("../fonts/circe/Circe-Regular.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/circle/Circle-Regular.svg#Circe-Regular") format("svg"),
-    url("../fonts/circle/Circle-Regular.ttf") format("truetype"),
-    url("../fonts/circle/Circle-Regular.woff") format("woff"),
-    url("../fonts/circle/Circle-Regular.woff2") format("woff2");
+    url("../fonts/circe/Circe-Regular.svg#Circe-Regular") format("svg"),
+    // url("../fonts/circe/Circe-Regular.ttf") format("truetype"),
+      url("../fonts/circe/Circe-Regular.woff") format("woff"),
+    url("../fonts/circe/Circe-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }

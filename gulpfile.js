@@ -66,6 +66,7 @@ function watch() {
   });
   gulp.watch("./src/scss/**/*.scss", styles);
   gulp.watch("./src/js/**/*.js", scripts);
+  gulp.watch("./src/img/**/*", img);
   gulp
     .watch("./src/**/*.html", gulp.series(html))
     .on("change", browserSync.reload);
