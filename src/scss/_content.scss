@@ -60,7 +60,7 @@
 
   &__yellow-2 {
     font-size: 2.5rem;
-    padding: 18px 30px 20px;
+    padding: 12px 30px 15px;
   }
 
   span {
@@ -83,30 +83,41 @@
 }
 
 .main__bottom {
-  margin-top: -40px;
-  position: relative;
+  margin-top: 0px;
   padding-bottom: 10px;
+  position: relative;
   z-index: 2;
-  background: rgb(0, 0, 30);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 30, 1) 75%,
-    rgba(0, 0, 30, 0) 91%
-  );
+}
+
+.main__bottom a {
+  margin: -40px 0 0;
 }
 
 .man__left {
-  width: 90%;
   margin-left: -15px;
+  margin-top: 30px;
 }
 
 .man__right {
-  width: 90%;
-  margin-right: -15px;
-  margin-top: -95px;
-  float: right;
-  z-index: 2;
-  position: relative;
+  margin-top: -130px;
+  padding-right: 0;
+  padding-left: 45px;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 20px;
+    background: rgb(0, 0, 30);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 30, 1) 0%,
+      rgba(0, 0, 30, 0) 65%
+    );
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
 }
 
 /*-------------------------------------------------------------------------------------
@@ -116,4 +127,118 @@
   background-color: rgba($color: #000000, $alpha: 0.8);
   padding-top: 30px;
   padding-bottom: 40px;
+}
+
+@media (min-width: 468px) {
+  .car {
+    transform: translate(10px, 37px);
+    width: 70%;
+  }
+}
+
+@media (min-width: 550px) {
+  .car {
+    transform: translate(70px, 10px);
+    width: 60%;
+  }
+  .header {
+    background-position: -400px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-position: -185px 0;
+    padding: 20px 30px;
+  }
+
+  .main {
+    padding-bottom: 0;
+  }
+
+  .main__bottom a {
+    margin: 0;
+  }
+
+  .man__left {
+    padding-right: 0;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .man__left img {
+    width: 100%;
+  }
+
+  .man__right {
+    margin-top: 0px;
+    padding-left: 0px;
+    align-items: end;
+    display: flex;
+  }
+
+  .man__right::after {
+    display: none;
+  }
+}
+
+@media (min-width: 991px) {
+  .car {
+    transform: translate(140px, -31px);
+    width: 50%;
+  }
+
+  .header {
+    background-size: 125% auto;
+    background-position: -242px 0;
+    height: 355px;
+  }
+
+  .main {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content-xl__center {
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+
+  .header {
+    background-position: -275px 0;
+    height: 519px;
+  }
+
+  .man__left,
+  .man__right {
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+
+  .man__left {
+    margin-top: -30px !important;
+  }
+
+  .man__right {
+    margin-top: -30px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .header {
+    background-position: -391px 0;
+    height: 577px;
+    background-size: 130% auto;
+  }
+
+  .man__left {
+    margin-top: -70px !important;
+  }
+
+  .man__right {
+    margin-top: -70px !important;
+  }
 }
